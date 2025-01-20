@@ -1,0 +1,55 @@
+1.  npm create tauri-app@latest
+2.  nombre del proyecto
+3.  TypeScript / JavaScript - (pnpm, yarn, npm, deno, bun)
+4.  npm
+5.  React - (https://react.dev/)
+6.  TypeScript
+
+7.  Template created! To get started run:
+     npm install
+     npm run tauri android init
+
+    For Desktop development, run:
+     npm run tauri dev
+    For Android development, run:
+     npm run tauri android dev
+
+8.  Instala ESLint
+     npm install eslint --save-dev
+     
+    Configura ESLint
+    npm init @eslint/config@latest 
+    o tambien con el comando
+    npx eslint --init
+
+    Si tu proyecto usa frameworks como React
+     npm install eslint-plugin-react --save-dev
+    /*
+    √ How would you like to use ESLint? · problems
+    √ What type of modules does your project use? · script
+    √ Which framework does your project use? · react
+    √ Does your project use TypeScript? · typescript
+    √ Where does your code run? · browser
+    The config that you've selected requires the following dependencies:   
+     eslint, globals, @eslint/js, typescript-eslint, eslint-plugin-react    
+    √ Would you like to install them now? · No / Yes
+    √ Which package manager do you want to use? · npm
+    */
+
+
+    (no requerido si utilizo la opcion anterior)Para TypeScript, instala también el soporte de ESLint para TypeScript
+     npm install @typescript-eslint/eslint-plugin @typescript-eslint/parser --save-dev
+
+
+*/
+    En tu archivo package.json, añade un script para facilitar la ejecución de ESLint:
+     "lint": "eslint . -c .js,.ts,.tsx"
+    (correr ESLint: npm run lint)
+
+    (Opcional) Integración en Tauri
+    Si quieres que ESLint analice tus archivos cada vez que compilas tu proyecto, puedes agregar el comando de ESLint al script de build de Tauri en package.json:
+     "build": "npm run lint && tauri build"
+    
+    Ejecuta ESLint: 
+     npm run lint
+*/

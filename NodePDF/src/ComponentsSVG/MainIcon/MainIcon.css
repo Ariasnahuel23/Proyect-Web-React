@@ -1,0 +1,5 @@
+.SvgMainIcon {
+    margin: 5px;
+    width: var(--main-icon);
+    height: var(--main-icon);
+  }

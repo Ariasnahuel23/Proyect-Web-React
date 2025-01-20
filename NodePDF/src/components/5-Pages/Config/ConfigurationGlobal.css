@@ -1,0 +1,37 @@
+.conteinerPage {
+  width: var(--A0-width);
+  height: var(--A0-height);
+  border: 2px solid var(--color-assent);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, var(--A0-width)));
+  grid-template-rows: repeat(auto-fit, minmax(min-content, var(--A0-height)));
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  grid-auto-flow: column;
+  color: var(--color-primary);
+}
+
+.conteinerA{
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputPage{
+  max-width: 4em;
+  height: 1.5em;
+  border: 1px solid var(--color-primary);
+  border-radius: 3px;
+  color: var(--color-primary);
+  background-color: var(--color-theme-monocrome);
+  font-size: .8em;
+  text-align: center;
+}
+.inputPage:hover{
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+
+}
+

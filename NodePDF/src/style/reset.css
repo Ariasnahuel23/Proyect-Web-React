@@ -1,0 +1,86 @@
+/* 1. Use a more-intuitive box-sizing model */
+/*Utilice un modelo de dimensionamiento de caja más intuitivo*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  /*Eliminar margen predeterminado*/
+  * {
+    margin: 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--color-theme-monocrome);
+  }
+  
+  body {
+    /* 3. Add accessible line-height */ /*Añadir altura de línea accesible*/
+    line-height: 1.5;
+    /* 4. Improve text rendering */ /*Mejorar la representación del texto*/
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */ /*Mejorar los valores predeterminados de los medios*/
+video, canvas {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */ /*Heredar fuentes para controles de formulario*/
+  input, button, textarea, select {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* 7. Avoid text overflows */ /*Evitar desbordamientos de texto*/
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* 8. Improve line wrapping */ /*Mejorar el ajuste de línea*/
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+
+    /*fuente de google*/
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* 9. Create a root stacking context*/ /*Crear un contexto de apilamiento de raíz*/
+  #root, #__next {
+    isolation: isolate;
+  }
+  /*PERSONAL*/
+  /*10. Eliminacion de decotracion de etiqurtas a y del estilo de las listas*/
+  ul{
+    padding: 0;
+  }
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    /*fuente de google*/
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    
+  }
+  span{
+    /*fuente de google ligth:300 Regular:400 Medium:500 SemiBold:600 Bold:700 */
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }

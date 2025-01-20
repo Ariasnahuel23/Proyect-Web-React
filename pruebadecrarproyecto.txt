@@ -1,0 +1,50 @@
+TAURI
+
+variable a completar {}
+
+1.CONSOLA
+mostrado en consola *//*
+(variable por defecto de consola)
+!! aclaraciones personales
+
+a- cd {ruta donde se alojara el proyecto}
+b- npm create tauri-app@latest
+c- */? Project name/* {}
+d- */? Package name (prueba) ›*/ {}
+e- */? Identifier (com.prueba.app) ›/* {}
+f- */? Choose which language to use for your frontend ›
+❯A-TypeScript / JavaScript  (pnpm, yarn, npm, bun)
+B-Rust 
+C-.NET*/
+
+g-!Elejimos la opcion A! TypeScript / JavaScript  (pnpm, yarn, npm, bun)
+h-*/? Choose your package manager ›
+❯npm
+pnpm
+yarn
+bun
+
+i-!Elejimos la opcion! npm
+j-*/? Choose your UI template ›/*
+Vanilla
+  Vue (https://vuejs.org/)
+  Svelte (https://svelte.dev/)
+  ❯React (https://react.dev/)
+  Solid  (https://solidjs.com/)
+  Angular (https://angular.dev/)
+  Preact (https://preactjs.com/)
+
+k-? Choose your UI flavor ›
+❯ TypeScript
+  JavaScript
+
+l-!Elejimos la opcion! TypeScript
+m-*/Template created! To get started run:
+  cd Prueba
+  npm install
+  npm run tauri dev/*
+!adicionales!
+npm install @tauri-apps/cli
+
+!selecciona depurar en la carpeta package.json! para depurar 
+

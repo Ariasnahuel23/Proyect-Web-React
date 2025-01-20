@@ -1,0 +1,45 @@
+
+git init
+git remote add origin https://github.com/Ariasnahuel23/Proyect-Web-React.git
+git status
+git add .
+git status
+git commit -m "se agregaron todos los archivos sin seguimiento"
+git push --set-upstream origin master
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Para evitar las advertencias sobre LF y CRLF, configura Git para que maneje automáticamente los finales de línea:
+git config --global core.autocrlf true
+git config --global core.autocrlf input
+
+#Si tu rama predeterminada no es main, crea y cámbiala con:
+git branch -M main
+
+# Inicia un nuevo repositorio de Git (si aún no lo has hecho)
+git init
+
+# Agrega el repositorio remoto con la URL correcta
+git remote add origin https://github.com/Ariasnahuel23/Proyect-Web-React.git
+
+# Verifica el estado de los archivos
+git status
+
+# Agrega todos los archivos al área de preparación
+git add .
+
+# Verifica nuevamente el estado (opcional, para confirmar que se añadieron correctamente)
+git status
+
+# Realiza un commit con un mensaje claro
+git commit -m "Se agregaron todos los archivos sin seguimiento"
+
+# Si algunos archivos no se añaden debido al problema de finales de línea, puedes forzar su inclusión:
+git add --renormalize .
+
+
+# Verifica si la rama `main` o `master` debe ser utilizada
+# Para alinear con la convención moderna de GitHub, renombra a `main` si es necesario
+git branch -m main
+
+# Empuja los cambios al repositorio remoto y establece la rama `main` como predeterminada
+git push --set-upstream origin main

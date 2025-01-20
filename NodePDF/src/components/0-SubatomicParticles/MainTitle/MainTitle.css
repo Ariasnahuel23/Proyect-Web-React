@@ -1,0 +1,16 @@
+.MainTitle{
+  height: max-content;
+  width: min-content;
+  display: inline;
+  color: var(--color-primary);
+  font-size: 1.8em;
+  font-weight: bold;
+  user-select: none;
+  text-shadow: 0px 2px 4px var(--color-theme-monocrome-contrast);
+}
+.MainTitle:hover {
+  transition-duration: 0.3s;
+  color: var(--color-assent);
+  text-shadow: 0px 2px 4px var(--color-assent);
+
+}

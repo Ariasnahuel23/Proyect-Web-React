@@ -1,0 +1,237 @@
+/**/
+/*!*/
+/*?*/
+
+:root {
+  --main-icon: 20px;
+
+  /* Color base - Teal */
+  --color-theme-monocrome: #151515;
+  --color-theme-monocrome-contrast: #e0f7f7;
+
+  /*#ededed*/
+  --color-primary: #00ffff; /*#008080*/
+  /* Teal principal */
+  /*USADO*/
+
+  /* Variaciones de Teal */
+  --color-primary-lightest: #e0f7f7;
+  /* Muy claro, para fondos */
+  --color-primary-lighter: #66cccc;
+  /* Claro, para fondos secundarios */
+  --color-primary-dark: #006666;
+  /*USADO*/
+  /* Oscuro, para resaltar elementos */
+  --color-primary-darkest: #004d4d;
+  /*USADO*/
+  /* Muy oscuro, para texto y bordes color teal */
+
+  /* Complementario */
+  --color-complementary: #ff6347;
+  /* Naranja rojizo complementario para acentos */
+
+  --color-assent: rgb(235, 15, 191);
+  --color-background: #f5f5f5;
+  --color-text: #333333;
+  --color-text-muted: #777777;
+
+  --background-color-contrast: #ffffff;
+
+  --color-font-primary: #00ff11;
+  --color-font-secondary: #ffffff;
+
+  --scale-global: 90%;
+  --box-shadow-global: 5px -5px 20px aqua;
+
+  /*--------Gradientes-Globales--Background:-------*/
+  --linear-gradient-0grad-black-aqua: linear-gradient(
+    0deg,
+    rgba(0, 255, 255, 1) 0%,
+    rgba(0, 111, 111, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  --linear-gradient-90grad-black-aqua: linear-gradient(
+    90deg,
+    rgba(0, 255, 255, 1) 0%,
+    rgba(0, 111, 111, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  --linear-gradient-180grad-black-aqua: linear-gradient(
+    180deg,
+    rgba(0, 255, 255, 1) 0%,
+    rgba(0, 111, 111, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  --linear-gradient-270grad-black-aqua: linear-gradient(
+    270deg,
+    rgba(0, 255, 255, 1) 0%,
+    rgba(0, 111, 111, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  --radial-gradient-black-aqua: radial-gradient(
+    circle,
+    rgba(0, 255, 255, 1) 0%,
+    rgba(0, 111, 111, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  /*--------Animaciones-y-Transiciones-Globales--:Hover-----------*/
+  --hover-rotate-global: 80grad;
+
+  --hover-rotate-90grad: 80grad;
+  --rotate-45grad: 75grad;
+  --rotate-45grad: 65grad;
+  --rotate-45grad: 75grad;
+
+  --scale-90-pocent: 90%;
+  --scale-110-pocent: 110%;
+  /*--------Edicion-de-herramientas--------*/
+  --edit-tool-background-color: #141414;
+  --edit-tool-icons-background-color: rgb(35, 35, 35);
+  --edit-tool-icons-color: aqua;
+  --edit-tool-icons-opacity: 100%;
+  --edit-tool-icons-height: 32px;
+  --edit-tool-icons-width: 32px;
+  --edit-tool-icons-box-shadow: 5px -5px 20px aqua;
+
+  /*--------colores-generales--------*/
+
+  --color-border: #808080;
+  --color-shadow: #00ffff;
+  --color-border-black: #141414;
+
+  --color-white: #efefef;
+  --color-black: #141414;
+  --color-red: red;
+  --color-orange: orange;
+  --color-gray: gray;
+  --color-pink: pink;
+  --color-indigo: indigo;
+  --color-blue: blue;
+  --color-green: green;
+  --color-yellow: yellow;
+  --color-magenta: magenta;
+  --color-teal: teal;
+  --stroke-width: 2px;
+  --color-blueviolet: blueviolet;
+  /*NavBar*/
+  --size-icon: 24px;
+
+  /*PDF*/
+  --A0-width: 841;
+  --A0-height: 1189;
+  --A1-width: 594;
+  --A1-height: 841;
+  --A2-width: 420;
+  --A2-height: 594;
+  --A3-width: 297;
+  --A3-height: 420;
+  --A4-width: 210;
+  --A4-height: 297;
+  --A5-width: 148;
+  --A5-height: 210;
+  --A6-width: 105;
+  --A6-height: 148;
+  --A7-width: 74;
+  --A7-height: 105;
+  --A8-width: 52;
+  --A8-height: 74;
+  --A9-width: 37;
+  --A9-height: 52;
+  --A10-width: 26;
+  --A10-height: 37;
+
+  --width-nav: max-content;
+  --padding-nav: 1em;
+  /*--Select-Tools-*/
+  --z-index-tools-1: 1;
+  --z-index-tools-2: 2;
+  --z-index-tools-3: 3;
+  --z-index-tools-4: 4;
+  --z-index-tools-5: 5;
+  --z-index-tools-6: 6;
+  --z-index-tools-7: 7;
+  --z-index-tools-8: 8;
+  /*-----Fuentes-------*/
+  --font-size-nav: 1.2em;
+
+  --background-color-nav: var(--color-theme-monocrome);
+
+  --color-icons-nav: var(--color-primary);
+  --color-icons-nav-hover: var(--color-assent);
+  --color-icons-nav-active: var(--color-primary);
+
+  --border-radius-nav: 6px;
+  --border-radius-nav-hover: 6px; /*probar con initial*/
+  --border-nav: 2px solid var(--color-assent);
+  --border-nav-hover: 2px solid var(--color-assent);
+  --border-nav-active: 2px solid var(--color-primary);
+  --border-bottom-nav-hover: 1px solid var(--color-assent);
+  --border-bottom-nav-active: 1px solid var(--color-primary);
+
+  --box-shadow-nav-hover: var(--color-primary) 1px 8px 14px -8px;
+  --box-shadow-nav-active: var(--color-assent) 1px 8px 14px -8px;
+
+  --font-size-nav-tool-bar: 1.2em;
+
+  --font-size-tool-bar: 1.2em;
+
+  --font-size-text-area: 1.2em;
+}
+
+div {
+  border: 2px solid var(--color-blueviolet);
+}
+
+body {
+  background-color: var(--color-theme-monocrome);
+  /* max-width: 270px; minimo de toolBar */
+}
+
+/*----------GLOBAL----------*/
+
+/*Header*/
+.Header {
+  max-width: 100%;
+  min-width: min-content;
+  background-color: var(--color-theme-monocrome);
+  display: grid;
+  grid-template-columns: min-content min-content;
+  align-items: center;
+  justify-content: center;
+}
+
+/* insertar nav*/
+
+.Aside {
+  border: red solid 1px; /*eliminar*/
+  background-color: var(--color-theme-monocrome);
+}
+
+.Footer {
+  border: greenyellow solid 1px; /*eliminar*/
+  background-color: var(--color-theme-monocrome);
+}
+
+.conteinerConfigPageSVG {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+/**/
+.IconConfigSvg {
+  margin: auto 0.2em;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  & path {
+    fill: var(--color-primary);
+  }
+}
+
+.IconConfigSvg:hover path {
+  fill: var(--color-assent);
+}

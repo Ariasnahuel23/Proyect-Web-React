@@ -1,0 +1,11 @@
+.path-page-break {
+  width: var(--main-icon);
+  height: var(--main-icon);
+  fill: var(--color-primary);
+}
+.svg-page-break:hover .path-page-break {
+  fill: var(--color-assent);
+}
+.svg-page-break {
+  cursor: pointer;
+}

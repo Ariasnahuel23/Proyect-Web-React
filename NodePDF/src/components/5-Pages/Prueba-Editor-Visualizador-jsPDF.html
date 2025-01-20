@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar y ver PDF con jsPDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <h1>Editar y visualizar un PDF</h1>
+
+    <!-- Controles de edición -->
+    <textarea id="content" rows="4" cols="50">Texto inicial en el PDF</textarea>
+    <br />
+    <button id="generate-pdf">Actualizar PDF</button>
+    <br /><br />
+
+    <!-- Visor del PDF -->
+    <iframe
+      id="pdf-preview"
+      width="600"
+      height="400"
+      style="border: 1px solid black"
+    ></iframe>
+
+    <script>
+      const { jsPDF } = window.jspdf;
+
+      // Función para generar el PDF
+      const generatePDF = () => {
+        const pdf = new jsPDF();
+        const content = document.getElementById("content").value;
+
+        pdf.text(content, 10, 10);
+
+        // Generar Blob y URL para vista previa
+        const pdfBlob = pdf.output("blob");
+        const pdfURL = URL.createObjectURL(pdfBlob);
+
+        // Actualizar el visor del PDF
+        const pdfPreview = document.getElementById("pdf-preview");
+        pdfPreview.src = pdfURL;
+      };
+
+      // Botón para actualizar el PDF
+      document
+        .getElementById("generate-pdf")
+        .addEventListener("click", generatePDF);
+    </script>
+  </body>
+</html>

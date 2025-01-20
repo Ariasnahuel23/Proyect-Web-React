@@ -1,0 +1,76 @@
+.canvas {
+  border: 2px solid var(--color-assent);
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: grid;
+}
+
+.layout {
+  border: 2px solid var(--color-assent);
+  display: grid;
+  grid-template-rows: min-content auto;
+  
+
+  & .textEdit {
+    border: 1px solid var(--color-primary);
+    max-width: auto;
+    min-height: calc(var(--font-size-nav) + 8px) ;
+    max-height: max-content;
+    cursor: pointer;
+    scrollbar-width: none;
+    color: var(--color-white);
+    background-color: var(--color-theme-monocrome);
+    text-align: center;
+    
+  }
+  
+  & .pdfPreview {
+    border: 1px solid var(--color-assent);
+    width: 100%;
+    height: 20em;
+    cursor: pointer;
+  }
+}
+
+.pdfOptions {
+  height: 3.5em;
+  border: 2px solid var(--color-assent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pdfButton {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-theme-monocrome);
+  border-radius: 8px;
+  height: 2.4em;
+  width: 8em;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  flex: 0 0 auto;
+  font-size: 0.9em;
+  margin:0 0.2em 0 0.2em;
+  
+  
+}
+.pdfButton:hover {
+  transition-duration: 0.5s;
+  color: var(--color-assent);
+  border: 1px solid var(--color-assent);
+  border-radius: 6px;
+  transform: scale(85%);
+  box-shadow: 0px 0px 20px var(--color-assent);
+}
+.pdfButton:active {
+  transition-duration: 0.2s;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 6px;
+  transform: scale(85%);
+  box-shadow: 0px 0px 20px var(--color-primary);
+}
+

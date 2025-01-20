@@ -1,0 +1,11 @@
+.ArrowNav {
+  fill: var(--color-primary);
+  cursor: pointer;
+}
+
+.ArrowNav:hover path {
+  fill: var(--color-theme-monocrome-contrast);
+}
+.ArrowNav:active path {
+  fill: var(--color-assent);
+}

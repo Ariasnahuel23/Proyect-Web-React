@@ -1,0 +1,38 @@
+
+#IconArcSvg {
+    width: 23px;
+    height: 23px;
+    
+}
+
+.ContainerArc{
+    width: auto;
+    height: min-content;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContainerArc:hover #IconArcSvg {
+    fill: var(--color-assent);
+    border: 1px solid var(--color-primary);
+    border-radius: 6px;
+    transform: scale(80%);
+    box-shadow: 0px 0px 20px var(--color-primary);
+    padding: 3px;
+}
+
+.ContainerArc:active #IconArcPath {
+    fill: var(--color-primary);
+}
+.ContainerArc:active #IconArcSvg {
+    border: 1px solid var(--color-primary);
+    border-radius: 6px;
+    transform: scale(100%);
+    box-shadow: 0px 0px 20px var(--color-primary);
+    padding:1px;
+}
+
+
+
+

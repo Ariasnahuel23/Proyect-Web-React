@@ -1,0 +1,9 @@
+
+
+.Banner {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: min-content min-content;
+    align-items: center;
+}
+
