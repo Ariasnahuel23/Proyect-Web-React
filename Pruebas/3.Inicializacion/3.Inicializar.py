@@ -26,7 +26,7 @@ def replace_eslint_config(project_path):
     """Replaces the content of eslint.config.js with the specified content."""
     eslint_config_path = os.path.join(project_path, "eslint.config.js")
 
-    # Contenido actualizado para el archivo eslint.config.js
+    # Código para el nuevo archivo eslint.config.js
     eslint_content = '''import globals from "globals";
 import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
@@ -39,7 +39,6 @@ export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
-  "plugin:react/jsx-runtime"
 ];'''
 
     # Escribe el nuevo contenido en el archivo eslint.config.js
